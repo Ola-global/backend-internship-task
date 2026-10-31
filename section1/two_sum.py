@@ -1,5 +1,5 @@
 def two_sum_unsorted(nums, k):
-    seen = {}  # number -> index
+    seen = {} 
     for i, n in enumerate(nums):
         if k - n in seen:
             return (seen[k - n], i)
@@ -13,9 +13,9 @@ def two_sum_descending(nums, k):
         if s == k:
             return (i, j)
         if s > k:
-            i += 1  # sum too big, move the big end down
+            i += 1  
         else:
-            j -= 1  # sum too small, move the small end up
+            j -= 1 
 
 
 if __name__ == "__main__":
